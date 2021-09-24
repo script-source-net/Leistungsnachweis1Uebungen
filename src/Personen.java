@@ -7,6 +7,7 @@ public class Personen {
         p1.vorname = "Alex";
         p1.nachname = "Schmid";
         p1.jahrgang = 1986;
+        p1.setWohnort("Mels");
 
         personen[0] = p1;
 
@@ -53,12 +54,12 @@ public class Personen {
 
                 personen[position] = p;
 
-                System.out.println("Person "+p.vorname+" "+p.nachname+" auf Index "+position+" hinzugefügt.");
+                System.out.println("Person "+p.vorname+" "+p.nachname+" aus "+p.getWohnort()+" auf Index "+position+" hinzugefügt.");
             }
             if(selection == 2){
                 position = IOTools.readInt("Welcher Index soll angezeigt werden? ");
                 Person p = personen[position];
-                System.out.println("Person "+p.vorname+" "+p.nachname+" auf Index "+position+" gespeichert.");
+                System.out.println("Person "+p.vorname+" "+p.nachname+" aus "+p.getWohnort()+" auf Index "+position+" hinzugefügt.");
             }
         }
         System.out.println();

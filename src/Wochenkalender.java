@@ -3,7 +3,7 @@ public class Wochenkalender {
     public static void main(String[] args) {
         String[] hours = new String[24];
         String[] tasks = new String[24];
-        String[] days = {"Mon","Die","Mit","Don","Fre","Sam","Son"};
+        String[] days = {"Mo","Di","Mi","Do","Fr","Sa","So"};
         String[][] tasksArray = {new String[24], new String[24], new String[24], new String[24], new String[24], new String[24], new String[24]};
 
 
